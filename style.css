@@ -1,0 +1,1347 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "jost", sans-serif;
+}
+
+.wrapper-grandfather {
+  width: 1920px;
+  margin: 0px auto;
+}
+
+.wrapper-father {
+  width: 1720px;
+  margin: 0px auto;
+}
+
+.wrapper-child {
+  padding: 0px 15px;
+  width: 1340px;
+  margin: 0px auto;
+}
+
+/*up top*/
+#up-top {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #151515;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 50px;
+  bottom: 100px;
+  cursor: pointer;
+  transition: scroll-top 1s;
+}
+
+/*secion 1 start*/
+.section-1 {
+  height: 1080px;
+  background-color: #e5e7e6;
+  background-image: url(images/background-section-1.png);
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+}
+
+header {
+  display: flex;
+  padding-top: 40px;
+}
+header .header-menu {
+  margin-right: 360px;
+}
+header .header-menu ul {
+  margin: 0px;
+  padding: 0px;
+  width: 435px;
+}
+header .header-menu ul li {
+  display: inline-block;
+  margin-right: 35px;
+}
+header .header-menu ul li div {
+  padding: 0px 2px 4px 2px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+header .header-menu ul li div a {
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #151515;
+  text-decoration: none;
+}
+header .header-menu ul li div:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #151515;
+  transition: border-bottom 1s;
+}
+header .header-icon {
+  margin-left: 555px;
+}
+header .header-icon ul {
+  margin: 0px;
+  padding: 0px;
+}
+header .header-icon ul li {
+  margin-left: 30px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+header .header-icon ul li #login {
+  padding: 0px 2px 4px 2px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+header .header-icon ul li #login a {
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #151515;
+  text-decoration: none;
+}
+header .header-icon ul li #login:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #151515;
+  transition: border-bottom 1s;
+}
+header .header-icon ul li #liked {
+  position: absolute;
+  left: 85%;
+  bottom: 50%;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #858585;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header-icon ul li #liked p {
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+}
+header .header-icon ul li #add-to-cart {
+  position: absolute;
+  left: 85%;
+  bottom: 50%;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #858585;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header-icon ul li #add-to-cart p {
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+}
+header .header-icon ul li:nth-child(4) {
+  margin-right: 15px;
+}
+
+.baners {
+  position: relative;
+  height: 647px;
+}
+.baners h1 {
+  color: #151515;
+  font-size: 72px;
+  line-height: 80px;
+  font-weight: bold;
+  margin-top: 364px;
+}
+.baners p {
+  margin-top: 40px;
+  font-size: 24px;
+  line-height: 36px;
+  color: #151515;
+  font-weight: 400;
+}
+.baners .baner-image {
+  position: absolute;
+  bottom: 0px;
+  right: 3px;
+}
+
+.change-baner {
+  position: absolute;
+  bottom: 43px;
+  right: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+.change-baner li {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #f1f1f3;
+  display: inline-block;
+}
+.change-baner li:hover {
+  cursor: pointer;
+}
+.change-baner li:nth-child(2) {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #151515;
+  border: 7px solid white;
+  margin: 0px 17px;
+}
+
+/*notification and social network*/
+.notification-and-social .notification {
+  position: fixed;
+  left: 110px;
+  bottom: 50px;
+  background-color: white;
+  height: 113px;
+  width: 280px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10000;
+}
+.notification-and-social .notification .notification-image {
+  margin-right: 10px;
+}
+.notification-and-social .notification .notification-text h3 {
+  line-height: 11px;
+  font-size: 11px;
+  color: #858585;
+  margin-top: 5px;
+  margin-bottom: 6px;
+}
+.notification-and-social .notification .notification-text h2 {
+  font-size: 15px;
+  line-height: 16px;
+  margin-bottom: 5px;
+}
+.notification-and-social .notification .notification-text h4 {
+  line-height: 12px;
+  font-size: 11px;
+  color: #858585;
+  font-style: italic;
+}
+.notification-and-social .notification .notification-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.notification-and-social .notification .notification-icon div {
+  cursor: pointer;
+}
+.notification-and-social .social {
+  position: fixed;
+  bottom: 35px;
+  left: 40px;
+  width: 50px;
+}
+.notification-and-social .social ul {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+.notification-and-social .social ul li {
+  margin-top: 10px;
+  display: inline-block;
+}
+.notification-and-social .social ul a div {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: white;
+}
+.notification-and-social .social ul a div:hover {
+  background: black;
+}
+.notification-and-social .social ul a .twitter {
+  background-image: url(images/twitter11.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.notification-and-social .social ul a .twitter:hover {
+  background-image: url(images/twitter12.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.notification-and-social .social ul a .facebook {
+  background-image: url(images/facebook12.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.notification-and-social .social ul a .facebook:hover {
+  background-image: url(images/facebook11.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.notification-and-social .social ul a .instagram {
+  background-image: url(images/Instagram11.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.notification-and-social .social ul a .instagram:hover {
+  background-image: url(images/Instagram12.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.notification-and-social .social ul a .youtube {
+  background-image: url(images/Youtube11.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.notification-and-social .social ul a .youtube:hover {
+  background-image: url(images/Youtube12.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*Section 2 start*/
+.section-2 {
+  padding-top: 50px;
+}
+.section-2 .three-banner-ads {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-bottom: 107px;
+}
+.section-2 .tab-product .product-category {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+.section-2 .tab-product .product-category li {
+  margin: 0px 12.5px;
+}
+.section-2 .tab-product .product-category li div {
+  font-size: 24px;
+  line-height: 24px;
+  color: #151515;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+.section-2 .tab-product .product-category li div:hover {
+  border-bottom: 2px solid #151515;
+  transition: border-bottom 0.75s;
+  cursor: pointer;
+}
+.section-2 .tab-product #new-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section-2 .tab-product #new-products > div {
+  margin-bottom: 27px;
+  width: 340px;
+  height: 490px;
+  padding: 10px;
+}
+.section-2 .tab-product #new-products > div .p1 {
+  font-size: 15px;
+  line-height: 15px;
+  color: #151515;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.section-2 .tab-product #new-products > div .p2 {
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 700;
+  color: #454545;
+}
+.section-2 .tab-product #new-products > div .p3 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+  color: #454545;
+  margin-top: 13px;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-right: 159px;
+}
+.section-2 .tab-product #new-products .new-product-1 {
+  border: 10px;
+  position: relative;
+}
+.section-2 .tab-product #new-products .new-product-1 .not-hover {
+  position: absolute;
+  bottom: 0px;
+  transition: bottom 0.5s;
+  background: white;
+  width: 320px;
+  height: auto;
+  padding: 23px 10px 0px 10px;
+}
+.section-2 .tab-product #new-products .new-product-1 .when-hover {
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #new-products .new-product-1 .when-hover .img {
+  margin-right: 10px;
+}
+.section-2 .tab-product #new-products .new-product-1 .when-hover img {
+  cursor: pointer;
+}
+.section-2 .tab-product #new-products .new-product-1 .when-hover div {
+  cursor: pointer;
+  display: inline-block;
+}
+.section-2 .tab-product #new-products .new-product-1 .new {
+  width: 44px;
+  height: 17px;
+  background: #151515;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+.section-2 .tab-product #new-products .new-product-1 .new p {
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  line-height: 17px;
+  font-weight: bold;
+}
+.section-2 .tab-product #new-products .new-product-1:hover {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.08), -5px -5px 30px rgba(0, 0, 0, 0.08);
+}
+.section-2 .tab-product #new-products .new-product-1:hover .when-hover {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #new-products .new-product-1:hover .not-hover {
+  bottom: 20px;
+  transition: bottom 0.5s;
+}
+.section-2 .tab-product #sale-products {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-2 .tab-product #sale-products > div {
+  margin-right: 10px;
+  margin-bottom: 27px;
+  width: 340px;
+  height: 490px;
+  padding: 10px;
+}
+.section-2 .tab-product #sale-products > div .p1 {
+  font-size: 15px;
+  line-height: 15px;
+  color: #151515;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.section-2 .tab-product #sale-products > div .p2 {
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 700;
+  color: #454545;
+}
+.section-2 .tab-product #sale-products > div .p3 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+  color: #454545;
+  margin-top: 13px;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-right: 159px;
+}
+.section-2 .tab-product #sale-products .best-seller-3 {
+  border: 10px;
+  position: relative;
+}
+.section-2 .tab-product #sale-products .best-seller-3 .not-hover {
+  position: absolute;
+  bottom: 0px;
+  transition: bottom 0.5s;
+  background: white;
+  width: 320px;
+  height: auto;
+  padding: 23px 10px 0px 10px;
+}
+.section-2 .tab-product #sale-products .best-seller-3 .not-hover .p2 {
+  color: #ff4e00;
+}
+.section-2 .tab-product #sale-products .best-seller-3 .not-hover .p2 span {
+  font-weight: normal;
+  color: #959595;
+}
+.section-2 .tab-product #sale-products .best-seller-3 .not-hover .p2 span span {
+  text-decoration: line-through;
+}
+.section-2 .tab-product #sale-products .best-seller-3 .when-hover {
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #sale-products .best-seller-3 .when-hover .img {
+  margin-right: 10px;
+}
+.section-2 .tab-product #sale-products .best-seller-3 .when-hover img {
+  cursor: pointer;
+}
+.section-2 .tab-product #sale-products .best-seller-3 .when-hover div {
+  cursor: pointer;
+  display: inline-block;
+}
+.section-2 .tab-product #sale-products .best-seller-3 .sale {
+  width: 44px;
+  height: 17px;
+  background: #ff4e00;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+.section-2 .tab-product #sale-products .best-seller-3 .sale p {
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  line-height: 17px;
+  font-weight: bold;
+}
+.section-2 .tab-product #sale-products .best-seller-3:hover {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.08), -5px -5px 30px rgba(0, 0, 0, 0.08);
+}
+.section-2 .tab-product #sale-products .best-seller-3:hover .when-hover {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #sale-products .best-seller-3:hover .not-hover {
+  bottom: 20px;
+  transition: bottom 0.5s;
+}
+.section-2 .tab-product #sale-products .best-seller-6 {
+  border: 10px;
+  position: relative;
+}
+.section-2 .tab-product #sale-products .best-seller-6 .not-hover {
+  position: absolute;
+  bottom: 0px;
+  transition: bottom 0.5s;
+  background: white;
+  width: 320px;
+  height: auto;
+  padding: 23px 10px 0px 10px;
+}
+.section-2 .tab-product #sale-products .best-seller-6 .not-hover .p2 {
+  color: #ff4e00;
+}
+.section-2 .tab-product #sale-products .best-seller-6 .not-hover .p2 span {
+  font-weight: normal;
+  color: #959595;
+}
+.section-2 .tab-product #sale-products .best-seller-6 .not-hover .p2 span span {
+  text-decoration: line-through;
+}
+.section-2 .tab-product #sale-products .best-seller-6 .when-hover {
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #sale-products .best-seller-6 .when-hover .img {
+  margin-right: 10px;
+}
+.section-2 .tab-product #sale-products .best-seller-6 .when-hover img {
+  cursor: pointer;
+}
+.section-2 .tab-product #sale-products .best-seller-6 .when-hover div {
+  cursor: pointer;
+  display: inline-block;
+}
+.section-2 .tab-product #sale-products .best-seller-6 .sale {
+  width: 44px;
+  height: 17px;
+  background: #ff4e00;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+.section-2 .tab-product #sale-products .best-seller-6 .sale p {
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  line-height: 17px;
+  font-weight: bold;
+}
+.section-2 .tab-product #sale-products .best-seller-6:hover {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.08), -5px -5px 30px rgba(0, 0, 0, 0.08);
+}
+.section-2 .tab-product #sale-products .best-seller-6:hover .when-hover {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #sale-products .best-seller-6:hover .not-hover {
+  bottom: 20px;
+  transition: bottom 0.5s;
+}
+.section-2 .tab-product #best-seller-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section-2 .tab-product #best-seller-products > div {
+  margin-bottom: 27px;
+  width: 340px;
+  height: 490px;
+  padding: 10px;
+}
+.section-2 .tab-product #best-seller-products > div .p1 {
+  font-size: 15px;
+  line-height: 15px;
+  color: #151515;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.section-2 .tab-product #best-seller-products > div .p2 {
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 700;
+  color: #454545;
+}
+.section-2 .tab-product #best-seller-products > div .p3 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+  color: #454545;
+  margin-top: 13px;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-right: 159px;
+}
+.section-2 .tab-product #best-seller-products .best-seller-1 {
+  border: 10px;
+  position: relative;
+}
+.section-2 .tab-product #best-seller-products .best-seller-1 .not-hover {
+  position: absolute;
+  bottom: 0px;
+  transition: bottom 0.5s;
+  background: white;
+  width: 320px;
+  height: auto;
+  padding: 23px 10px 0px 10px;
+}
+.section-2 .tab-product #best-seller-products .best-seller-1 .when-hover {
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-1 .when-hover .img {
+  margin-right: 10px;
+}
+.section-2 .tab-product #best-seller-products .best-seller-1 .when-hover img {
+  cursor: pointer;
+}
+.section-2 .tab-product #best-seller-products .best-seller-1 .when-hover div {
+  cursor: pointer;
+  display: inline-block;
+}
+.section-2 .tab-product #best-seller-products .best-seller-1 .new {
+  width: 44px;
+  height: 17px;
+  background: #151515;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+.section-2 .tab-product #best-seller-products .best-seller-1 .new p {
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  line-height: 17px;
+  font-weight: bold;
+}
+.section-2 .tab-product #best-seller-products .best-seller-1:hover {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.08), -5px -5px 30px rgba(0, 0, 0, 0.08);
+}
+.section-2 .tab-product #best-seller-products .best-seller-1:hover .when-hover {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-1:hover .not-hover {
+  bottom: 20px;
+  transition: bottom 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-2 {
+  border: 10px;
+  position: relative;
+}
+.section-2 .tab-product #best-seller-products .best-seller-2 .not-hover {
+  position: absolute;
+  bottom: 0px;
+  transition: bottom 0.5s;
+  background: white;
+  width: 320px;
+  height: auto;
+  padding: 23px 10px 0px 10px;
+}
+.section-2 .tab-product #best-seller-products .best-seller-2 .when-hover {
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-2 .when-hover .img {
+  margin-right: 10px;
+}
+.section-2 .tab-product #best-seller-products .best-seller-2 .when-hover img {
+  cursor: pointer;
+}
+.section-2 .tab-product #best-seller-products .best-seller-2 .when-hover div {
+  cursor: pointer;
+  display: inline-block;
+}
+.section-2 .tab-product #best-seller-products .best-seller-2:hover {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.08), -5px -5px 30px rgba(0, 0, 0, 0.08);
+}
+.section-2 .tab-product #best-seller-products .best-seller-2:hover .when-hover {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-2:hover .not-hover {
+  bottom: 20px;
+  transition: bottom 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-3 {
+  border: 10px;
+  position: relative;
+}
+.section-2 .tab-product #best-seller-products .best-seller-3 .not-hover {
+  position: absolute;
+  bottom: 0px;
+  transition: bottom 0.5s;
+  background: white;
+  width: 320px;
+  height: auto;
+  padding: 23px 10px 0px 10px;
+}
+.section-2 .tab-product #best-seller-products .best-seller-3 .not-hover .p2 {
+  color: #ff4e00;
+}
+.section-2 .tab-product #best-seller-products .best-seller-3 .not-hover .p2 span {
+  font-weight: normal;
+  color: #959595;
+}
+.section-2 .tab-product #best-seller-products .best-seller-3 .not-hover .p2 span span {
+  text-decoration: line-through;
+}
+.section-2 .tab-product #best-seller-products .best-seller-3 .when-hover {
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-3 .when-hover .img {
+  margin-right: 10px;
+}
+.section-2 .tab-product #best-seller-products .best-seller-3 .when-hover img {
+  cursor: pointer;
+}
+.section-2 .tab-product #best-seller-products .best-seller-3 .when-hover div {
+  cursor: pointer;
+  display: inline-block;
+}
+.section-2 .tab-product #best-seller-products .best-seller-3 .sale {
+  width: 44px;
+  height: 17px;
+  background: #ff4e00;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+.section-2 .tab-product #best-seller-products .best-seller-3 .sale p {
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  line-height: 17px;
+  font-weight: bold;
+}
+.section-2 .tab-product #best-seller-products .best-seller-3:hover {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.08), -5px -5px 30px rgba(0, 0, 0, 0.08);
+}
+.section-2 .tab-product #best-seller-products .best-seller-3:hover .when-hover {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-3:hover .not-hover {
+  bottom: 20px;
+  transition: bottom 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-4 {
+  height: 528px;
+  border: 10px;
+  position: relative;
+}
+.section-2 .tab-product #best-seller-products .best-seller-4 .not-hover {
+  position: absolute;
+  bottom: 0px;
+  transition: bottom 0.5s;
+  background: white;
+  width: 320px;
+  height: auto;
+  padding: 23px 10px 0px 10px;
+}
+.section-2 .tab-product #best-seller-products .best-seller-4 .when-hover {
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-4 .when-hover .img {
+  margin-right: 10px;
+}
+.section-2 .tab-product #best-seller-products .best-seller-4 .when-hover img {
+  cursor: pointer;
+}
+.section-2 .tab-product #best-seller-products .best-seller-4 .when-hover div {
+  cursor: pointer;
+  display: inline-block;
+}
+.section-2 .tab-product #best-seller-products .best-seller-4 .color {
+  display: inline-block;
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+.section-2 .tab-product #best-seller-products .best-seller-4:hover {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.08), -5px -5px 30px rgba(0, 0, 0, 0.08);
+}
+.section-2 .tab-product #best-seller-products .best-seller-4:hover .when-hover {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-4:hover .not-hover {
+  bottom: 20px;
+  transition: bottom 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-5 {
+  border: 10px;
+  position: relative;
+}
+.section-2 .tab-product #best-seller-products .best-seller-5 .not-hover {
+  position: absolute;
+  bottom: 0px;
+  transition: bottom 0.5s;
+  background: white;
+  width: 320px;
+  height: auto;
+  padding: 23px 10px 0px 10px;
+}
+.section-2 .tab-product #best-seller-products .best-seller-5 .when-hover {
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-5 .when-hover .img {
+  margin-right: 10px;
+}
+.section-2 .tab-product #best-seller-products .best-seller-5 .when-hover img {
+  cursor: pointer;
+}
+.section-2 .tab-product #best-seller-products .best-seller-5 .when-hover div {
+  cursor: pointer;
+  display: inline-block;
+}
+.section-2 .tab-product #best-seller-products .best-seller-5:hover {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.08), -5px -5px 30px rgba(0, 0, 0, 0.08);
+}
+.section-2 .tab-product #best-seller-products .best-seller-5:hover .when-hover {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-5:hover .not-hover {
+  bottom: 20px;
+  transition: bottom 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-6 {
+  border: 10px;
+  position: relative;
+}
+.section-2 .tab-product #best-seller-products .best-seller-6 .not-hover {
+  position: absolute;
+  bottom: 0px;
+  transition: bottom 0.5s;
+  background: white;
+  width: 320px;
+  height: auto;
+  padding: 23px 10px 0px 10px;
+}
+.section-2 .tab-product #best-seller-products .best-seller-6 .not-hover .p2 {
+  color: #ff4e00;
+}
+.section-2 .tab-product #best-seller-products .best-seller-6 .not-hover .p2 span {
+  font-weight: normal;
+  color: #959595;
+}
+.section-2 .tab-product #best-seller-products .best-seller-6 .not-hover .p2 span span {
+  text-decoration: line-through;
+}
+.section-2 .tab-product #best-seller-products .best-seller-6 .when-hover {
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-6 .when-hover .img {
+  margin-right: 10px;
+}
+.section-2 .tab-product #best-seller-products .best-seller-6 .when-hover img {
+  cursor: pointer;
+}
+.section-2 .tab-product #best-seller-products .best-seller-6 .when-hover div {
+  cursor: pointer;
+  display: inline-block;
+}
+.section-2 .tab-product #best-seller-products .best-seller-6 .sale {
+  width: 44px;
+  height: 17px;
+  background: #ff4e00;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+.section-2 .tab-product #best-seller-products .best-seller-6 .sale p {
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  line-height: 17px;
+  font-weight: bold;
+}
+.section-2 .tab-product #best-seller-products .best-seller-6:hover {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.08), -5px -5px 30px rgba(0, 0, 0, 0.08);
+}
+.section-2 .tab-product #best-seller-products .best-seller-6:hover .when-hover {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-6:hover .not-hover {
+  bottom: 20px;
+  transition: bottom 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-7 {
+  border: 10px;
+  position: relative;
+}
+.section-2 .tab-product #best-seller-products .best-seller-7 .not-hover {
+  position: absolute;
+  bottom: 0px;
+  transition: bottom 0.5s;
+  background: white;
+  width: 320px;
+  height: auto;
+  padding: 23px 10px 0px 10px;
+  z-index: 5;
+}
+.section-2 .tab-product #best-seller-products .best-seller-7 .when-hover {
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-7 .when-hover .img {
+  margin-right: 10px;
+}
+.section-2 .tab-product #best-seller-products .best-seller-7 .when-hover img {
+  cursor: pointer;
+}
+.section-2 .tab-product #best-seller-products .best-seller-7 .when-hover div {
+  cursor: pointer;
+  display: inline-block;
+}
+.section-2 .tab-product #best-seller-products .best-seller-7 .change-img {
+  width: 320px;
+  height: 404px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-image: url(images/out-of-stock.png);
+  background-position: cover;
+  z-index: 4;
+  display: none;
+}
+.section-2 .tab-product #best-seller-products .best-seller-7:hover {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.08), -5px -5px 30px rgba(0, 0, 0, 0.08);
+}
+.section-2 .tab-product #best-seller-products .best-seller-7:hover .when-hover {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-7:hover .not-hover {
+  bottom: 20px;
+  transition: bottom 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-7:hover .change-img {
+  display: block;
+}
+.section-2 .tab-product #best-seller-products .best-seller-8 {
+  border: 10px;
+  position: relative;
+}
+.section-2 .tab-product #best-seller-products .best-seller-8 .not-hover {
+  position: absolute;
+  bottom: 0px;
+  transition: bottom 0.5s;
+  background: white;
+  width: 320px;
+  height: auto;
+  padding: 23px 10px 0px 10px;
+}
+.section-2 .tab-product #best-seller-products .best-seller-8 .when-hover {
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-8 .when-hover .img {
+  margin-right: 10px;
+}
+.section-2 .tab-product #best-seller-products .best-seller-8 .when-hover img {
+  cursor: pointer;
+}
+.section-2 .tab-product #best-seller-products .best-seller-8 .when-hover div {
+  cursor: pointer;
+  display: inline-block;
+}
+.section-2 .tab-product #best-seller-products .best-seller-8:hover {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.08), -5px -5px 30px rgba(0, 0, 0, 0.08);
+}
+.section-2 .tab-product #best-seller-products .best-seller-8:hover .when-hover {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-8:hover .not-hover {
+  bottom: 20px;
+  transition: bottom 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-9 {
+  border: 10px;
+  position: relative;
+}
+.section-2 .tab-product #best-seller-products .best-seller-9 .not-hover {
+  position: absolute;
+  bottom: 0px;
+  transition: bottom 0.5s;
+  background: white;
+  width: 320px;
+  height: auto;
+  padding: 23px 10px 0px 10px;
+}
+.section-2 .tab-product #best-seller-products .best-seller-9 .when-hover {
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-9 .when-hover .img {
+  margin-right: 10px;
+}
+.section-2 .tab-product #best-seller-products .best-seller-9 .when-hover img {
+  cursor: pointer;
+}
+.section-2 .tab-product #best-seller-products .best-seller-9 .when-hover div {
+  cursor: pointer;
+  display: inline-block;
+}
+.section-2 .tab-product #best-seller-products .best-seller-9:hover {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.08), -5px -5px 30px rgba(0, 0, 0, 0.08);
+}
+.section-2 .tab-product #best-seller-products .best-seller-9:hover .when-hover {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-9:hover .not-hover {
+  bottom: 20px;
+  transition: bottom 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-10 {
+  border: 10px;
+  position: relative;
+}
+.section-2 .tab-product #best-seller-products .best-seller-10 .not-hover {
+  position: absolute;
+  bottom: 0px;
+  transition: bottom 0.5s;
+  background: white;
+  width: 320px;
+  height: auto;
+  padding: 23px 10px 0px 10px;
+}
+.section-2 .tab-product #best-seller-products .best-seller-10 .when-hover {
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-10 .when-hover .img {
+  margin-right: 10px;
+}
+.section-2 .tab-product #best-seller-products .best-seller-10 .when-hover img {
+  cursor: pointer;
+}
+.section-2 .tab-product #best-seller-products .best-seller-10 .when-hover div {
+  cursor: pointer;
+  display: inline-block;
+}
+.section-2 .tab-product #best-seller-products .best-seller-10:hover {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.08), -5px -5px 30px rgba(0, 0, 0, 0.08);
+}
+.section-2 .tab-product #best-seller-products .best-seller-10:hover .when-hover {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.section-2 .tab-product #best-seller-products .best-seller-10:hover .not-hover {
+  bottom: 20px;
+  transition: bottom 0.5s;
+}
+.section-2 .tab-product .see-all-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  margin-bottom: 110px;
+}
+.section-2 .tab-product .see-all-btn button {
+  width: 185px;
+  height: 50px;
+  border: 2px solid #dddddd;
+  border-radius: 1px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #151511;
+  cursor: pointer;
+  background: white;
+}
+.section-2 .tab-product .see-all-btn button:hover {
+  color: white;
+  background: #151511;
+  transition: background 1.5s;
+}
+
+/*Section 3 start*/
+.section-3 .two-ads {
+  display: flex;
+}
+.section-3 .two-ads .ads-1 {
+  width: 50%;
+  height: 420px;
+  background-image: url(images/ads1.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-3 .two-ads .ads-1 div div {
+  display: flex;
+  justify-content: center;
+}
+.section-3 .two-ads .ads-2 {
+  width: 50%;
+  height: 420px;
+  background-image: url(images/ads2.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-3 .two-ads .ads-2 div div {
+  display: flex;
+  justify-content: center;
+}
+.section-3 .two-ads h2 {
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 18px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
+.section-3 .two-ads a {
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 500;
+  color: white;
+  border-bottom: 2px solid transparent;
+}
+.section-3 .two-ads a:hover {
+  border-bottom: 2px solid white;
+  transition: border-bottom 0.75s;
+  cursor: pointer;
+}
+.section-3 .icon-box {
+  display: flex;
+  margin-top: 87px;
+  margin-bottom: 85px;
+}
+.section-3 .icon-box > div {
+  width: 33.3%;
+  height: 48px;
+}
+.section-3 .icon-box .worldwide-shipping {
+  background-image: url(images/travelling.png);
+  background-repeat: no-repeat;
+  background-position-x: left 40px;
+  padding-left: 108px;
+}
+.section-3 .icon-box .worldwide-shipping h2 {
+  font-size: 15px;
+  line-height: 15px;
+  color: #151515;
+  font-weight: 700;
+  margin-bottom: 7px;
+  margin-top: 7px;
+}
+.section-3 .icon-box .worldwide-shipping p {
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+  color: #858585;
+}
+.section-3 .icon-box .guarantee {
+  background-image: url(images/dollar.png);
+  background-repeat: no-repeat;
+  background-position-x: left 40px;
+  padding-left: 108px;
+}
+.section-3 .icon-box .guarantee h2 {
+  font-size: 15px;
+  line-height: 15px;
+  color: #151515;
+  font-weight: 700;
+  margin-bottom: 7px;
+  margin-top: 7px;
+}
+.section-3 .icon-box .guarantee p {
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+  color: #858585;
+}
+.section-3 .icon-box .security {
+  background-image: url(images/padlock.png);
+  background-repeat: no-repeat;
+  background-position-x: left 40px;
+  padding-left: 108px;
+}
+.section-3 .icon-box .security h2 {
+  font-size: 15px;
+  line-height: 15px;
+  color: #151515;
+  font-weight: 700;
+  margin-bottom: 7px;
+  margin-top: 7px;
+}
+.section-3 .icon-box .security p {
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+  color: #858585;
+}
+
+/*Section 3 end*/
+/*The line*/
+.line {
+  border-top: 1px solid #e5e5e5;
+}
+
+/*Footer start*/
+footer .footer-1 {
+  display: flex;
+  padding-bottom: 68px;
+}
+footer .footer-1 > div {
+  width: 33.3%;
+}
+footer .footer-1 h2 {
+  margin-top: 100px;
+  margin-bottom: 45px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #151515;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+footer .footer-1 h3 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  color: #454545;
+  margin-bottom: 22px;
+}
+footer .footer-1 .newsletter form {
+  width: 100%;
+  margin-bottom: 24px;
+}
+footer .footer-1 .newsletter form input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #151115;
+  height: 35px;
+  width: 75%;
+}
+footer .footer-1 .newsletter form button {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #151115;
+  height: 35px;
+  background: white;
+  cursor: pointer;
+  color: #151515;
+  font-size: 15px;
+  margin-left: -5px;
+}
+footer .footer-1 .newsletter form ::placeholder {
+  color: #454545;
+  font-size: 15px;
+}
+footer .footer-2 {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-2 ul li {
+  line-height: 100px;
+  display: inline-block;
+  color: #151515;
+  font-size: 13px;
+  font-weight: 600;
+}
+footer .footer-2 .left li {
+  margin-right: 45px;
+}
+footer .footer-2 .right li {
+  margin: 0px 15px;
+}
+
+/*Responsive*/
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Interview</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+	<!-- Start section 1 -->
+	<div class="fluid-container section-1">
+		<header class="wrapper-father">
+
+			<div class="header-menu">
+				<ul>
+					<li><div><a href="#">Home</a></div></li>
+					<li><div><a href="#">Shop</a></div></li>
+					<li><div><a href="#">Elements</a></li>
+					<li><div><a href="#">Blog</a></div></li>
+					<li><div><a href="#">Page</a></div></li>
+				</ul>
+			</div>
+
+			<div class="header-logo">
+				<a href="#"><img src="images/logo-zonex.png" alt="logo zonex"></a>
+			</div>
+
+			<div class="header-icon">
+				<ul>
+					<li><div id="login"><a href="#">Login</a></div></li>
+					
+					<li><a href="#"><img src="images/search-icon.png" alt=""></a></li>
+
+					<li>
+						<img src="images/heart.png" alt="">
+						<div id="liked"><p id="count-like">0</p></div>
+					</li>
+
+					<li>
+						<img src="images/cart.png" alt="">
+						<div id="add-to-cart"><p id="count-cart">0</p></div>
+					</li>
+				</ul>
+			</div>
+
+		</header>
+
+		<div class="baners wrapper-child">
+			<h1>Fall-Winter <br> Clearance Sales</h1>
+			<p>All sale items are Final Sale / Free Shipping on All <br> Older</p>
+		</div>
+
+		<ul class="change-baner">
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<!-- Section 1 end -->
+
+
+
+	<!-- Notification and Social Network -->
+	<div class="notification-and-social">
+
+		<div class="social">
+			<ul>
+				<li>
+					<a href="#">
+						<div class="twitter"></div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="facebook"></div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="instagram"></div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="youtube"></div>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="notification" id="notice">
+			<div class="notification-image">
+				<img src="images/pic.png" alt="">
+			</div>
+
+			<div class="notification-text">
+				<h3>Someone purchaed a</h3>
+				<h2>Faux shearling <br>double-breasted coat</h2>
+				<h4>15 minutes ago London, <br> Great Britain</h4>
+			</div>
+
+			<div class="notification-icon">
+				<div onclick="closeNotice()"><img src="images/close.png" alt="" height="9px" width="9px"></div>
+				<a href=""><img src="images/eye.png" alt="" height="9px" width="13px"></a>
+			</div>
+		</div>
+	</div>
+	<!-- Notification and social network end -->
+
+
+	<!-- up top -->
+	<div id="up-top" onclick="onTop()">
+		<img src="images/up.png" alt="">
+	</div>
+
+
+	<!-- Section 2 start -->
+	<div class="wrapper-father section-2">
+		<div class="three-banner-ads">
+			<div class="ban-ads-1">
+				<img src="images/ban-ads-1.png" alt="">
+			</div>
+
+			<div class="ban-ads-2">
+				<img src="images/ban-ads-2.png" alt="">
+			</div>
+
+			<div class="ban-ads-3">
+				<img src="images/ban-ads-3.png" alt="">
+			</div>
+		</div>
+
+		<div class="tab-product">
+			<ul class="product-category">
+				<li><div class="tabTitle" onclick="showTab('best-seller-products')" id="best-seller-products-father" style="border-bottom: 2px solid #151515">Best Sellers</div></li>
+				
+				<li><div class="tabTitle" onclick="showTab('new-products')" id="new-products-father">New Products</div></li>
+				
+				<li><div class="tabTitle" onclick="showTab('sale-products')" id="sale-products-father">Sale Products</div></li>
+			</ul>
+
+
+			<!-- new products -->
+			<div id="new-products" class="tab" style="display: none">
+
+				<div class="new-product-1">
+					<div class="new">
+							<p>NEW</p>
+					</div>
+
+					<img src="images/shoe.png" alt="">
+					
+					<div class="not-hover">
+						<p class="p1">Indy boots in suede</h3>
+						<p class="p2">$220.00</h4>
+						<div class="when-hover">
+							<div onclick="addToCart()"><p class="p3">Add to cart</p></div>
+							
+							<img src="images/eye.png" width="16px" height="12px" class="img">
+
+							<img onclick="like()" src="images/heart.png" width="16px" height="14px">
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+			<!-- Sale product -->
+			<div id="sale-products" class="tab" style="display: none">
+
+				<div class="best-seller-3">
+					<div class="sale">
+							<p>-25%</p>
+					</div>
+
+					<img src="images/white-shirt.png" alt="">
+
+					<div class="not-hover">
+						<p class="p1">Short-sleeve mockneck top</h3>
+						<p class="p2"> <span><span>$60.00</span> - </span> $45.00</h4>
+						<div class="when-hover">
+							<div onclick="addToCart()"><p class="p3">Add to cart</p></div>
+							
+							<img src="images/eye.png" width="16px" height="12px" class="img">
+
+							<img onclick="like()" src="images/heart.png" width="16px" height="14px">
+						</div>
+					</div>
+				</div>
+
+				<div class="best-seller-6">
+					<div class="sale">
+							<p>-20%</p>
+					</div>
+
+					<img src="images/blue-pain.png" alt="">
+
+					<div class="not-hover">
+						<p class="p1">Pullover hoodie in vintage cotton</h3>
+						<p class="p2"> <span><span>$165.00</span> - </span> $128.00</h4>
+						<div class="when-hover">
+							<div onclick="addToCart()"><p class="p3">Add to cart</p></div>
+							
+							<img src="images/eye.png" width="16px" height="12px" class="img">
+
+							<img onclick="like()" src="images/heart.png" width="16px" height="14px">
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+			<!-- best saler product -->
+			<div id="best-seller-products" class="tab">
+
+				<div class="best-seller-1">
+					<div class="new">
+							<p>NEW</p>
+					</div>
+
+					<img src="images/shoe.png" alt="">
+					
+					<div class="not-hover">
+						<p class="p1">Indy boots in suede</h3>
+						<p class="p2">$220.00</h4>
+						<div class="when-hover">
+							<div onclick="addToCart()"><p class="p3">Add to cart</p></div>
+							
+							<img src="images/eye.png" width="16px" height="12px" class="img">
+
+							<img onclick="like()" src="images/heart.png" width="16px" height="14px">
+						</div>
+					</div>
+				</div>
+				
+				<div class="best-seller-2">
+					<img src="images/red-hodie.png" alt="">
+					<div class="not-hover">
+						<p class="p1">Pullover hoodie in vintage cotton</h3>
+						<p class="p2">$220.00</h4>
+						<div class="when-hover">
+							<div onclick="addToCart()"><p class="p3">Add to cart</p></div>
+							
+							<img src="images/eye.png" width="16px" height="12px" class="img">
+
+							<img onclick="like()" src="images/heart.png" width="16px" height="14px">
+						</div>
+					</div>
+				</div>
+				
+				<div class="best-seller-3">
+					<div class="sale">
+							<p>-25%</p>
+					</div>
+
+					<img src="images/white-shirt.png" alt="">
+
+					<div class="not-hover">
+						<p class="p1">Short-sleeve mockneck top</h3>
+						<p class="p2"> <span><span>$60.00</span> - </span> $45.00</h4>
+						<div class="when-hover">
+							<div onclick="addToCart()"><p class="p3">Add to cart</p></div>
+							
+							<img src="images/eye.png" width="16px" height="12px" class="img">
+
+							<img onclick="like()" src="images/heart.png" width="16px" height="14px">
+						</div>
+					</div>
+				</div>
+				
+				<div class="best-seller-4">
+					<img src="images/pull-soc.png" alt="">
+					<div class="not-hover">
+						<p class="p1">Backpack with contrasting buckle</h3>
+						<div class="color">
+							<img src="images/color.png" alt="">
+						</div>
+						<p class="p2">$80.00 - $125.00</h4>
+						<div class="when-hover">
+							<div onclick="addToCart()"><p class="p3">Add to cart</p></div>
+							
+							<img src="images/eye.png" width="16px" height="12px" class="img">
+
+							<img onclick="like()" src="images/heart.png" width="16px" height="14px">
+						</div>
+					</div>
+				</div>
+				
+				<div class="best-seller-5">
+					<img src="images/so-mi-caro.png" alt="">
+					<div class="not-hover">
+						<p class="p1">Pullover hoodie in vintage cotton</h3>
+						<p class="p2">$220.00</h4>
+						<div class="when-hover">
+							<div onclick="addToCart()"><p class="p3">Add to cart</p></div>
+							
+							<img src="images/eye.png" width="16px" height="12px" class="img">
+
+							<img onclick="like()" src="images/heart.png" width="16px" height="14px">
+						</div>
+					</div>
+				</div>
+				
+				<div class="best-seller-6">
+					<div class="sale">
+							<p>-20%</p>
+					</div>
+
+					<img src="images/blue-pain.png" alt="">
+
+					<div class="not-hover">
+						<p class="p1">Pullover hoodie in vintage cotton</h3>
+						<p class="p2"> <span><span>$165.00</span> - </span> $128.00</h4>
+						<div class="when-hover">
+							<div onclick="addToCart()"><p class="p3">Add to cart</p></div>
+							
+							<img src="images/eye.png" width="16px" height="12px" class="img">
+
+							<img onclick="like()" src="images/heart.png" width="16px" height="14px">
+						</div>
+					</div>
+				</div>
+				
+				<div class="best-seller-7">
+					
+					<img src="images/trang-suc.png" alt="">
+					<div class="not-hover">
+						<p class="p1">Pullover hoodie in vintage cotton</h3>
+						<p class="p2">$220.00</h4>
+						<div class="when-hover">
+							<div onclick="addToCart()"><p class="p3">Add to cart</p></div>
+							
+							<img src="images/eye.png" width="16px" height="12px" class="img">
+
+							<img onclick="like()" src="images/heart.png" width="16px" height="14px">
+						</div>
+					</div>
+
+					<div class="change-img"></div>
+				</div>
+				
+				<div class="best-seller-8">
+					<img src="images/girl-shoe.png" alt="">
+					<div class="not-hover">
+						<p class="p1">Pullover hoodie in vintage cotton</h3>
+						<p class="p2">$220.00</h4>
+						<div class="when-hover">
+							<div onclick="addToCart()"><p class="p3">Add to cart</p></div>
+							
+							<img src="images/eye.png" width="16px" height="12px" class="img">
+
+							<img onclick="like()" src="images/heart.png" width="16px" height="14px">
+						</div>
+					</div>
+				</div>
+				
+				<div class="best-seller-9">
+					<img src="images/mag-to.png" alt="">
+					<div class="not-hover">
+						<p class="p1">Pullover hoodie in vintage cotton</h3>
+						<p class="p2">$220.00</h4>
+						<div class="when-hover">
+							<div onclick="addToCart()"><p class="p3">Add to cart</p></div>
+							
+							<img src="images/eye.png" width="16px" height="12px" class="img">
+
+							<img onclick="like()" src="images/heart.png" width="16px" height="14px">
+						</div>
+					</div>
+				</div>
+				
+				<div class="best-seller-10">
+					<img src="images/len.png" alt="">
+					<div class="not-hover">
+						<p class="p1">Pullover hoodie in vintage cotton</h3>
+						<p class="p2">$220.00</h4>
+							
+						<div class="when-hover">
+							<div onclick="addToCart()"><p class="p3">Add to cart</p></div>
+							
+							<img src="images/eye.png" width="16px" height="12px" class="img">
+
+							<img onclick="like()" src="images/heart.png" width="16px" height="14px">
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="see-all-btn">
+					<button>SEE ALL PRODUCTS</button>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Section 2 end -->
+
+
+
+	<!-- Section 3 start -->
+	<div class="section-3">
+
+		<div class="two-ads">
+			<div class="ads-1">
+				<div>
+					<h2>Men’s Sportswear</h2>
+					<div>
+						<a>Read more</a>
+					</div>
+				</div>
+			</div>
+			<div class="ads-2">
+				<div>
+					<h2>Find your fit</h2>
+					<div>
+						<a>Read more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="icon-box wrapper-child">
+
+			<div class="worldwide-shipping">
+				<h2>Worldwide shipping</h2>
+				<p>Special financing and earn rewards.</p>
+			</div>
+
+			<div class="guarantee">
+				<h2>30 Days Guarantee</h2>
+				<p>30-days free return policy.</p>
+			</div>
+
+			<div class="security">
+				<h2>Secured Payments</h2>
+				<p>We accept all major credit cards.</p>
+			</div>
+		</div>
+	</div>
+	<!-- Section 3 end -->
+
+
+
+	<!-- The line -->
+	<div class="line"></div>
+
+
+
+	<!-- footer start -->
+	<footer class="wrapper-child">
+
+
+		<div class="footer-1">
+
+			<div class="service">
+				<h2>Customer service</h2>
+				<h3>Phone: +866.597.2742</h3>
+				<h3>Live chat</h3>
+				<h3>About Us</h3>
+				<h3>Terms & Conditions</h3>
+			</div>
+
+			<div class="company">
+				<h2>Company</h2>
+				<h3>What We Do</h3>
+				<h3>Available Services</h3>
+				<h3>Latest Posts</h3>
+				<h3>FAQs</h3>
+			</div>
+
+			<div class="newsletter">
+				<h2>Our newsletter</h2>
+				<h3>Join our list and get 15% off your first purchase!</h3>
+				<form action="">
+					<input type="text" placeholder="Email Address">
+					<button>Subcribe &nbsp; </button>
+				</form>
+				<h3>*Don’t worry we don’t spam</h3>
+			</div>
+
+		</div>
+
+		<!-- The line  -->
+		<div class="line"></div>
+
+		<div class="footer-2">
+
+
+			<ul class="left">
+				<li>Returns Policy</li>
+				<li>Track Your Order</li>
+				<li>Shipping & Delivery</li>
+			</ul>
+
+			<ul class="right">
+				<li><a href="#"><img src="images/kz-twitter.png" alt=""></a></li>
+				<li><a href="#"><img src="images/kz-facebook.png" alt=""></a></li>
+				<li><a href="#"><img src="images/kz-instagram.png" alt=""></a></li>
+				<li><a href="#"><img src="images/kz-pinterest.png" alt=""></a></li>
+			</ul>
+
+		</div>
+
+	</footer>
+
+	<!-- footer end -->
+
+	<script src="script.js">
+	</script>
+</body>
+</html>
