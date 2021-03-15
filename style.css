@@ -11,6 +11,7 @@ html {
 
 body {
   font-family: "jost", sans-serif;
+  /*overflow-x: hidden;*/
 }
 
 .wrapper-grandfather {
@@ -86,6 +87,9 @@ header .header-menu ul li div:hover {
   cursor: pointer;
   border-bottom: 2px solid #151515;
   transition: border-bottom 1s;
+}
+header #menu-phone {
+  display: none;
 }
 header .header-icon {
   margin-left: 555px;
@@ -322,6 +326,41 @@ header .header-icon ul li:nth-child(4) {
   justify-content: space-between;
   cursor: pointer;
   margin-bottom: 107px;
+}
+.section-2 .three-banner-ads h2 {
+  font-size: 36px;
+  line-height: 36px;
+  color: #151515;
+  margin-top: 1.5em;
+  margin-left: 1.5em;
+  margin-bottom: 0.5em;
+}
+.section-2 .three-banner-ads a {
+  font-size: 16px;
+  color: #151515;
+  margin-left: 3.3em;
+}
+.section-2 .three-banner-ads a:hover {
+  border-bottom: 2px solid black;
+  transition: border-bottom 1s;
+}
+.section-2 .three-banner-ads .ban-ads-1 {
+  max-width: 566px;
+  height: 290px;
+  background-image: url(images/ban-ads-1.png);
+  background-position: center;
+}
+.section-2 .three-banner-ads .ban-ads-2 {
+  max-width: 566px;
+  height: 290px;
+  background-image: url(images/ban-ads-2.png);
+  background-position: center;
+}
+.section-2 .three-banner-ads .ban-ads-3 {
+  max-width: 566px;
+  height: 290px;
+  background-image: url(images/ban-ads-3.png);
+  background-position: center;
 }
 .section-2 .tab-product .product-category {
   display: flex;
@@ -607,8 +646,8 @@ header .header-icon ul li:nth-child(4) {
 }
 .section-2 .tab-product #best-seller-products > div {
   margin-bottom: 27px;
-  width: 340px;
-  height: 490px;
+  max-width: 340px;
+  height: 510px;
   padding: 10px;
 }
 .section-2 .tab-product #best-seller-products > div .p1 {
@@ -1197,12 +1236,12 @@ header .header-icon ul li:nth-child(4) {
   cursor: pointer;
 }
 .section-3 .icon-box {
-  display: flex;
+  /*display: flex;*/
   margin-top: 87px;
   margin-bottom: 85px;
 }
-.section-3 .icon-box > div {
-  width: 33.3%;
+.section-3 .icon-box > div > div {
+  /*width: 33.3%;*/
   height: 48px;
 }
 .section-3 .icon-box .worldwide-shipping {
@@ -1278,7 +1317,7 @@ footer .footer-1 {
   padding-bottom: 68px;
 }
 footer .footer-1 > div {
-  width: 33.3%;
+  /*width: 33.3%;*/
 }
 footer .footer-1 h2 {
   margin-top: 100px;
@@ -1325,8 +1364,8 @@ footer .footer-1 .newsletter form ::placeholder {
   font-size: 15px;
 }
 footer .footer-2 {
-  display: flex;
-  justify-content: space-between;
+  /*display: flex;
+  justify-content: space-between;*/
 }
 footer .footer-2 ul li {
   line-height: 100px;
@@ -1338,10 +1377,310 @@ footer .footer-2 ul li {
 footer .footer-2 .left li {
   margin-right: 45px;
 }
+footer .footer-2 .right {
+  display: flex;
+  justify-content: flex-end;
+}
 footer .footer-2 .right li {
   margin: 0px 15px;
 }
 
 /*Responsive*/
+/*xl*/
+@media (max-width: 1500px) {
+  .wrapper-father {
+    width: 1120px;
+    margin: 0px auto;
+  }
+
+  header .header-menu {
+    margin-right: 100px;
+  }
+
+  header .header-icon {
+    margin-left: 150px;
+  }
+}
+/*large*/
+@media (max-width: 1200px) {
+  .wrapper-father {
+    width: 1000px;
+    margin: 0px auto;
+  }
+
+  header .header-menu {
+    margin-right: 50px;
+  }
+
+  header .header-icon {
+    margin-left: 100px;
+  }
+}
+/*Max 1200px*/
+@media (max-width: 1200px) {
+  .wrapper-father {
+    width: 1120px;
+    margin: 0px auto;
+  }
+
+  header .header-menu {
+    margin-right: 50px;
+  }
+
+  header .header-icon {
+    margin-left: 100px;
+  }
+}
+/*max 992*/
+@media (max-width: 992px) {
+  .section-2 .tab-product .product-category {
+    justify-content: normal;
+  }
+
+  .wrapper-father {
+    width: 750px;
+  }
+
+  header .header-menu {
+    display: none;
+  }
+
+  header .header-icon {
+    display: none;
+  }
+
+  header .header-logo {
+    display: none;
+  }
+
+  header #menu-phone {
+    display: flex;
+    font-size: 2em;
+    position: relative;
+  }
+  header #menu-phone i {
+    margin-left: 1em;
+    cursor: pointer;
+  }
+  header #menu-phone i ul {
+    display: none;
+  }
+  header #menu-phone i ul li {
+    display: block;
+    width: 100vw;
+    background: white;
+    text-align: center;
+  }
+  header #menu-phone i ul li div a {
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #151515;
+    text-decoration: none;
+    font-family: "jost", sans-serif;
+  }
+  header #menu-phone i ul li div a:hover {
+    border-bottom: 2px solid black;
+  }
+  header #menu-phone i ul li div:hover {
+    cursor: pointer;
+  }
+  header #menu-phone i:hover ul, header #menu-phone i:active ul {
+    display: block;
+  }
+  header #menu-phone #logo-zonex {
+    position: absolute;
+    top: 4px;
+    left: 400px;
+  }
+
+  .notification-and-social {
+    display: none;
+  }
+
+  #up-top {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .baners h1 {
+    font-size: 50px;
+  }
+
+  .baners p {
+    font-size: 15px;
+  }
+
+  .wrapper-father {
+    width: 700px;
+  }
+
+  .section-2 .three-banner-ads h2 {
+    font-size: 25px;
+  }
+
+  footer .footer-2 .right {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  header .header-menu {
+    display: none;
+  }
+
+  header .header-icon {
+    display: none;
+  }
+
+  header .header-logo {
+    display: none;
+  }
+
+  header #menu-phone {
+    display: flex;
+    font-size: 1.5em;
+    position: relative;
+  }
+  header #menu-phone i {
+    cursor: pointer;
+    margin-left: 1em;
+  }
+  header #menu-phone i ul {
+    display: none;
+  }
+  header #menu-phone i ul li {
+    display: block;
+    width: 100vw;
+    background: white;
+    text-align: center;
+  }
+  header #menu-phone i ul li div a {
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #151515;
+    text-decoration: none;
+    font-family: "jost", sans-serif;
+  }
+  header #menu-phone i ul li div a:hover {
+    border-bottom: 2px solid black;
+  }
+  header #menu-phone i ul li div:hover {
+    cursor: pointer;
+  }
+  header #menu-phone i:hover ul, header #menu-phone i:active ul {
+    display: block;
+  }
+  header #menu-phone #logo-zonex {
+    position: absolute;
+    top: 2px;
+    left: 300px;
+  }
+
+  .section-3 .icon-box > div > div {
+    margin: 10px;
+  }
+
+  .notification-and-social {
+    display: none;
+  }
+
+  #up-top {
+    display: none;
+  }
+}
+@media (max-width: 540px) {
+  .baners h1 {
+    font-size: 40px;
+  }
+
+  .baners p {
+    font-size: 12px;
+  }
+
+  .wrapper-father {
+    width: 330px;
+  }
+
+  .section-2 .three-banner-ads h2 {
+    font-size: 15px;
+    margin-left: 10px;
+  }
+
+  .section-2 .three-banner-ads a {
+    margin-left: 0.75em;
+    font-size: 15px;
+  }
+
+  .section-2 .tab-product .product-category li div {
+    font-size: 17px;
+  }
+
+  footer .footer-2 .right {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  header .header-menu {
+    display: none;
+  }
+
+  header .header-icon {
+    display: none;
+  }
+
+  header .header-logo {
+    display: none;
+  }
+
+  header #menu-phone {
+    display: flex;
+    font-size: 1em;
+    position: relative;
+  }
+  header #menu-phone i {
+    cursor: pointer;
+    margin-left: 1em;
+  }
+  header #menu-phone i ul {
+    display: none;
+  }
+  header #menu-phone i ul li {
+    display: block;
+    width: 100vw;
+    background: white;
+    text-align: center;
+  }
+  header #menu-phone i ul li div a {
+    line-height: 16px;
+    font-size: 0.5em;
+    font-weight: 500;
+    color: #151515;
+    text-decoration: none;
+    font-family: "jost", sans-serif;
+  }
+  header #menu-phone i ul li div a:hover {
+    border-bottom: 2px solid black;
+  }
+  header #menu-phone i ul li div:hover {
+    cursor: pointer;
+  }
+  header #menu-phone i:hover ul, header #menu-phone i:active ul {
+    display: block;
+  }
+  header #menu-phone #logo-zonex {
+    position: absolute;
+    top: 0px;
+    left: 150px;
+  }
+
+  .notification-and-social {
+    display: none;
+  }
+
+  #up-top {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

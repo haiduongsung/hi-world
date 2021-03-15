@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="boostrap/bootstrap-grid.css">
+	<script src="https://kit.fontawesome.com/8fe44688a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	
@@ -22,6 +24,7 @@
 					<li><div><a href="#">Blog</a></div></li>
 					<li><div><a href="#">Page</a></div></li>
 				</ul>
+
 			</div>
 
 			<div class="header-logo">
@@ -46,9 +49,29 @@
 				</ul>
 			</div>
 
+		
+				<ul id="menu-phone">
+					<i class="fa fa-bars" aria-hidden="true">
+						<ul>
+							<li><div><a href="#">Home</a></div></li>
+							<li><div><a href="#">Shop</a></div></li>
+							<li><div><a href="#">Elements</a></li>
+							<li><div><a href="#">Blog</a></div></li>
+							<li><div><a href="#">Page</a></div></li>
+							<li><div id="login"><a href="#">Login</a></div></li>
+						</ul>
+					</i>
+
+					<li>
+						<a href="#"><img src="images/logo-zonex.png" id="logo-zonex"></a>
+					</li>
+
+				</ul>
+			
+
 		</header>
 
-		<div class="baners wrapper-child">
+		<div class="baners container">
 			<h1>Fall-Winter <br> Clearance Sales</h1>
 			<p>All sale items are Final Sale / Free Shipping on All <br> Older</p>
 		</div>
@@ -119,18 +142,24 @@
 
 	<!-- Section 2 start -->
 	<div class="wrapper-father section-2">
-		<div class="three-banner-ads">
-			<div class="ban-ads-1">
-				<img src="images/ban-ads-1.png" alt="">
+		<div class="three-banner-ads row">
+			<div class="ban-ads-1 col-4">
+				<h2>
+					Women's <br> Mid-Season
+				</h2>
+				<a>Shop Now</a>
 			</div>
 
-			<div class="ban-ads-2">
-				<img src="images/ban-ads-2.png" alt="">
+			<div class="ban-ads-2 col-4">
+				<h2>Summer <br> Romance</h2>
+				<a>Shop Now</a>
 			</div>
 
-			<div class="ban-ads-3">
-				<img src="images/ban-ads-3.png" alt="">
+			<div class="ban-ads-3 col-4">
+				<h2>20% Off <br> All Accessories</h2>
+				<a>Shop Now</a>
 			</div>
+
 		</div>
 
 		<div class="tab-product">
@@ -425,21 +454,22 @@
 			</div>
 		</div>
 
-		<div class="icon-box wrapper-child">
+		<div class="icon-box container">
+			<div class="row">
+				<div class="worldwide-shipping col-md-4">
+					<h2>Worldwide shipping</h2>
+					<p>Special financing and earn rewards.</p>
+				</div>
 
-			<div class="worldwide-shipping">
-				<h2>Worldwide shipping</h2>
-				<p>Special financing and earn rewards.</p>
-			</div>
+				<div class="guarantee col-md-4">
+					<h2>30 Days Guarantee</h2>
+					<p>30-days free return policy.</p>
+				</div>
 
-			<div class="guarantee">
-				<h2>30 Days Guarantee</h2>
-				<p>30-days free return policy.</p>
-			</div>
-
-			<div class="security">
-				<h2>Secured Payments</h2>
-				<p>We accept all major credit cards.</p>
+				<div class="security col-md-4">
+					<h2>Secured Payments</h2>
+					<p>We accept all major credit cards.</p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -453,12 +483,12 @@
 
 
 	<!-- footer start -->
-	<footer class="wrapper-child">
+	<footer class="container">
 
 
-		<div class="footer-1">
+		<div class="footer-1 row">
 
-			<div class="service">
+			<div class="service col-md-4">
 				<h2>Customer service</h2>
 				<h3>Phone: +866.597.2742</h3>
 				<h3>Live chat</h3>
@@ -466,7 +496,7 @@
 				<h3>Terms & Conditions</h3>
 			</div>
 
-			<div class="company">
+			<div class="company col-md-4">
 				<h2>Company</h2>
 				<h3>What We Do</h3>
 				<h3>Available Services</h3>
@@ -474,7 +504,7 @@
 				<h3>FAQs</h3>
 			</div>
 
-			<div class="newsletter">
+			<div class="newsletter col-md-4">
 				<h2>Our newsletter</h2>
 				<h3>Join our list and get 15% off your first purchase!</h3>
 				<form action="">
@@ -489,16 +519,16 @@
 		<!-- The line  -->
 		<div class="line"></div>
 
-		<div class="footer-2">
+		<div class="footer-2 row justify-content-between">
 
 
-			<ul class="left">
+			<ul class="left col-md-6">
 				<li>Returns Policy</li>
 				<li>Track Your Order</li>
 				<li>Shipping & Delivery</li>
 			</ul>
 
-			<ul class="right">
+			<ul class="right col-md-6">
 				<li><a href="#"><img src="images/kz-twitter.png" alt=""></a></li>
 				<li><a href="#"><img src="images/kz-facebook.png" alt=""></a></li>
 				<li><a href="#"><img src="images/kz-instagram.png" alt=""></a></li>
