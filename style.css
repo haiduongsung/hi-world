@@ -255,6 +255,7 @@ header .header-icon ul li:nth-child(4) {
 }
 .notification-and-social .social {
   position: fixed;
+  z-index: 10;
   bottom: 35px;
   left: 40px;
   width: 50px;
